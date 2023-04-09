@@ -1,0 +1,139 @@
+{
+  "src/lib/assets/command_icon.webp": {
+    "file": "_app/immutable/assets/command_icon-ea5fd59a.webp",
+    "src": "src/lib/assets/command_icon.webp"
+  },
+  "src/lib/assets/localization.jpg": {
+    "file": "_app/immutable/assets/localization-a62826c3.jpg",
+    "src": "src/lib/assets/localization.jpg"
+  },
+  "src/lib/assets/database.png": {
+    "file": "_app/immutable/assets/database-66132066.png",
+    "src": "src/lib/assets/database.png"
+  },
+  "src/lib/assets/api.png": {
+    "file": "_app/immutable/assets/api-55c00f25.png",
+    "src": "src/lib/assets/api.png"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-05a59bfb.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-55a7e92d.css",
+    "src": "src/routes/+layout.css"
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-2fafe918.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/about/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-932909aa.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-2a9b5b78.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-9f671b46.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-da46b06b.js",
+      "src/routes/+layout.svelte"
+    ]
+  },
+  "src/routes/+layout.js": {
+    "file": "_app/immutable/modules/pages/_layout.js-9cbb603b.js",
+    "src": "src/routes/+layout.js",
+    "isEntry": true,
+    "imports": [
+      "__layout-da46b06b.js"
+    ]
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "_app/immutable/components/pages/about/_page.svelte-539c1ccb.js",
+    "src": "src/routes/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-21122274.js"
+    ]
+  },
+  "__layout-da46b06b.js": {
+    "file": "_app/immutable/chunks/_layout-da46b06b.js"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-67f93515.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-21122274.js",
+      "_singletons-7e9b232f.js"
+    ]
+  },
+  "_singletons-7e9b232f.js": {
+    "file": "_app/immutable/chunks/singletons-7e9b232f.js",
+    "imports": [
+      "_index-21122274.js"
+    ]
+  },
+  "_index-21122274.js": {
+    "file": "_app/immutable/chunks/index-21122274.js"
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-3ce456e2.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-21122274.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-55a7e92d.css"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-71f2048a.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-21122274.js",
+      "_singletons-7e9b232f.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-e6b62064.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-21122274.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-05a59bfb.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/command_icon-ea5fd59a.webp",
+      "_app/immutable/assets/localization-a62826c3.jpg",
+      "_app/immutable/assets/database-66132066.png",
+      "_app/immutable/assets/api-55c00f25.png"
+    ]
+  }
+}
