@@ -1,103 +1,41 @@
-# sveltekit-gh-pages
+# Zumito Framework Website
 
-> Minimal [SvelteKit](https://kit.svelte.dev/) set-up made deployable to [GitHub Pages](https://metonym.github.io/sveltekit-gh-pages/).
+Landing page for Zumito Framework.
+Access the website at [framework.zumito.ga](https://framework.zumito.ga).
 
-## 1) Use the static adapter
+## Tech Stack
 
-Install the [SvelteKit static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) to prerender the app.
+- [SvelteKit](https://kit.svelte.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Github Pages](https://pages.github.com/)
 
-**package.json**
+## Setup project for local development
 
-```diff
-  "devDependencies": {
-+   "@sveltejs/adapter-static": "1.0.5",
-    "@sveltejs/kit": "1.2.1",
-    "gh-pages": "^5.0.0",
-    "svelte": "^3.55.1",
-    "vite": "^4.0.4"
-  }
+1. Clone the repo
+
+```bash
+git clone https://github.com/ZumitoTeam/zumito-framework-website.git
 ```
 
-**svelte.config.js**
+2. Install dependencies
 
-```diff
-+ import adapter from "@sveltejs/adapter-static";
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-+   adapter: adapter(),
-  },
-};
-
-export default config;
-
+```bash
+cd zumito-framework-website
+npm install
 ```
 
-Ensure your top-level `+layout.js` exports `prerender = true`.
+3. Start the development server
 
-```js
-// src/routes/+layout.js
-export const prerender = true;
+```bash
+npm run dev
 ```
 
-## 2) Modify `paths.base` in the config
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
-- `kit.paths.base` should be your repo URL subpath (see the [Vite docs](https://vitejs.dev/guide/static-deploy.html#github-pages))
+## Contributing
 
-```diff
-import adapter from "@sveltejs/adapter-static";
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-    adapter: adapter(),
-+   paths: {
-+     base: process.env.NODE_ENV === "production" ? "/sveltekit-gh-pages" : "",
-+   },
-  },
-};
-
-export default config;
-
-```
-
-**Note:** You will also need to prepend relative paths with the [SvelteKit `base` path](https://kit.svelte.dev/docs/modules#$app-paths) so that your app can build successfully for production.
-
-```svelte
-<script>
-  import { base } from "$app/paths";
-</script>
-
-<a href="{base}/about">About</a>
-```
-
-## 3) Add a `.nojekyll` file to the build
-
-The last step is to add a `.nojekyll` file to the build folder to [bypass Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
-
-**package.json**
-
-```json
-{
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "deploy": "touch build/.nojekyll && gh-pages -d build -t true"
-  }
-}
-```
-
----
-
-## Quick start
-
-Use [degit](https://github.com/Rich-Harris/degit) to quickly scaffold a new project:
-
-```sh
-npx degit metonym/sveltekit-gh-pages my-app
-cd my-app && yarn install
-```
+We welcome contributions of all kinds to Zumito! 
+Just open a pull request and we will review it as soon as possible.
 
 ## Deploying to GitHub Pages
 
