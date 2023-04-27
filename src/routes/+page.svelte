@@ -335,6 +335,59 @@
     </p>
   </div>
 
+  <div class="max-w-7xl mx-auto bg-white p-4 lg:p-12">
+    <h2 class="text-center text-2xl font-bold text-gray-800 md:text-4xl s-y_bCXRrkrYfP">Partners</h2>
+    <p class="text-center text-xl text-gray-600 ">
+      We are proud to be part of the following communities
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+
+      <div class="bg-white shadow-md rounded-lg p-6 w-96">
+        <div class="flex items-center justify-center bg-gray-300 rounded  w-24 h-24 mx-auto mb-4">
+            <svg class="w-12 h-12 text-gray-200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"><path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
+        </div>
+        <h2 class="text-2xl font-bold text-center mb-4 mt-6">
+          <div class="w-full bg-gray-200 rounded-lg h-[20px] max-w-[50%] mx-auto"></div>
+        </h2>
+        <div class="text-gray-600 text-center mb-8">
+          <div class="w-full bg-gray-200 rounded-lg h-[10px] max-w-[85%] mx-auto mt-4"></div>
+          <div class="w-full bg-gray-200 rounded-lg h-[10px] max-w-[70%] mx-auto mt-2"></div>
+        </div>
+        <div class="flex justify-center mb-4">
+          <button class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded min-w-[80%] h-10"></button>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6 w-96">
+        <img src="https://images-ext-2.discordapp.net/external/OFT7Osw4siY8L8XVpjq4VwHmEn4VNbFRxycLNerYpT0/https/portalmybot.com/assets/img/logo-guia.png?width=514&height=513" alt="MyBot Team logo" class="w-24 h-24 mx-auto mb-4">
+        <h2 class="text-2xl font-bold text-center mb-2">MyBot Team</h2>
+        <p class="text-gray-600 text-center mb-4">Join our Discord server or visit our website to learn more about us.</p>
+        <div class="flex justify-center mb-4">
+          <a href="https://discord.gg/g6ssSmK" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2">Join Discord</a>
+          <a href="https://portalmybot.com/?ref=framework.zumito.ga" class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Visit Website</a>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6 w-96">
+        <div class="flex items-center justify-center bg-gray-300 rounded  w-24 h-24 mx-auto mb-4">
+            <svg class="w-12 h-12 text-gray-200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"><path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
+        </div>
+        <h2 class="text-2xl font-bold text-center mb-4 mt-6">
+          <div class="w-full bg-gray-200 rounded-lg h-[20px] max-w-[50%] mx-auto"></div>
+        </h2>
+        <div class="text-gray-600 text-center mb-8">
+          <div class="w-full bg-gray-200 rounded-lg h-[10px] max-w-[85%] mx-auto mt-4"></div>
+          <div class="w-full bg-gray-200 rounded-lg h-[10px] max-w-[70%] mx-auto mt-2"></div>
+        </div>
+        <div class="flex justify-center mb-4">
+          <button class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded min-w-[80%] h-10"></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+
   <div class="relative py-16">
     <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40">
       <div class="blur-[106px] h-56 bg-gradient-to-br from-rose-600 to-purple-400 "></div>
