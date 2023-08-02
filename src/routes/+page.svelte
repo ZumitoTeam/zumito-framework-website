@@ -41,7 +41,7 @@
           </p>
 
           <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
-            <a href="https://docs.zumito.ga/docs/custom/quickstart" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <a href="https://docs.zumito.dev/docs/custom/quickstart" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
               <span class="relative text-base font-semibold text-white">Quick start</span>
             </a>
             <a href="#features" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-rose-600/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
@@ -364,7 +364,7 @@
         <p class="text-gray-600 text-center mb-4">Join our Discord server or visit our website to learn more about us.</p>
         <div class="flex justify-center mb-4">
           <a href="https://discord.gg/g6ssSmK" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2">Join Discord</a>
-          <a href="https://portalmybot.com/?ref=framework.zumito.ga" class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Visit Website</a>
+          <a href="https://portalmybot.com/?ref=framework.zumito.dev" class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">Visit Website</a>
         </div>
       </div>
 
@@ -408,10 +408,10 @@
             Build your next project with zumito framework and start saving time.
           </p>
           <div class="flex flex-wrap justify-center gap-6">
-            <a href="https://docs.zumito.ga/docs/custom/quickstart" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <a href="https://docs.zumito.dev/docs/custom/quickstart" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
               <span class="relative text-base font-semibold text-white">Get Started</span>
             </a>
-            <a href="https://docs.zumito.ga/docs/quick-start" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-rose-600/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <a href="https://docs.zumito.dev/docs/quick-start" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-rose-600/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
               <span class="relative text-base font-semibold text-rose-600 ">More about</span>
             </a>
           </div>
