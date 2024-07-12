@@ -32,7 +32,7 @@
   }
 </script>
 
-<main class="space-y-20">
+<main class="space-y-20 bg-white">
   <div class="relative" id="home">
     <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40">
         <div class="h-56 bg-gradient-to-br from-rose-600 to-purple-400 blur-[106px]"></div>
