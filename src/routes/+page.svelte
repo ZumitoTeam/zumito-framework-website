@@ -546,7 +546,7 @@
     </p>
   </div>
 
-  <div class="mx-auto max-w-7xl bg-white p-4 lg:p-12">
+<!--   <div class="mx-auto max-w-7xl bg-white p-4 lg:p-12">
     <h2 class="s-y_bCXRrkrYfP text-center text-2xl font-bold text-gray-800 md:text-4xl" data-cursor="text">Partners</h2>
     <p class="text-center text-xl text-gray-600" data-cursor="text">
       We are proud to be part of the following communities
@@ -596,7 +596,7 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
   
 
   <div class="relative py-16">
