@@ -22,6 +22,8 @@
     answer: "You can contribute by reporting bugs, suggesting features, or even by contributing to the codebase. You can also join our Discord server to get help from the community."
   }]
 
+  const getStartedUrl = "https://docs.zumito.dev/guides/start/"
+
   function onShowCopyTooltip(e) {
     const element = e.currentTarget;
     navigator.clipboard.writeText('npx zumito-cli create project');
@@ -52,7 +54,7 @@
           </p>
 
           <div class="mt-16 flex flex-wrap justify-center gap-x-6 gap-y-4">
-            <a data-cursor="block" href="https://docs.zumito.dev/docs/custom/quickstart" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <a data-cursor="block" href={getStartedUrl} class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
               <span class="relative text-base font-semibold text-white">Quick start</span>
             </a>
             <a  data-cursor="block" href="#features" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-rose-600/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
@@ -242,91 +244,91 @@
   </div>
 
   <!-- Featured Modules Section -->
-  <div class="relative py-20 bg-white">
+  <div class="relative bg-white py-20">
     <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
-      <div class="text-center mb-16">
+      <div class="mb-16 text-center">
         <h2 class="text-4xl font-bold text-gray-900 md:text-5xl" data-cursor="text">
           Ready-to-use <span class="text-rose-600">Modules</span>
         </h2>
-        <p class="mt-6 text-xl text-gray-700 max-w-3xl mx-auto" data-cursor="text">
+        <p class="mx-auto mt-6 max-w-3xl text-xl text-gray-700" data-cursor="text">
           Skip the development time with our pre-built modules. Install and customize in minutes.
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
         <!-- User Panel Module -->
-        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-cursor="block">
-          <div class="absolute top-4 right-4">
-            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Popular</span>
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+          <div class="absolute right-4 top-4">
+            <span class="rounded-full bg-blue-600 px-3 py-1 text-xs font-semibold text-white">Popular</span>
           </div>
           <div class="mb-6">
-            <div class="w-16 h-16 bg-blue-200 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2a2 2 0 002-2z"></path>
+            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-200 transition-transform duration-300 group-hover:scale-110">
+              <svg class="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2a2 2 0 002-2z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2" data-cursor="text">User Panel</h3>
-            <p class="text-gray-600 mb-4" data-cursor="text">Complete dashboard for control and management of other modules and bot features. Centralized administration panel.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Dashboard</span>
-              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Management</span>
-              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Control Panel</span>
+            <h3 class="mb-2 text-2xl font-bold text-gray-900" data-cursor="text">User Panel</h3>
+            <p class="mb-4 text-gray-600" data-cursor="text">Complete dashboard for control and management of other modules and bot features. Centralized administration panel.</p>
+            <div class="mb-4 flex flex-wrap gap-2">
+              <span class="rounded bg-blue-100 px-2 py-1 text-xs text-blue-800" data-cursor="text">Dashboard</span>
+              <span class="rounded bg-blue-100 px-2 py-1 text-xs text-blue-800" data-cursor="text">Management</span>
+              <span class="rounded bg-blue-100 px-2 py-1 text-xs text-blue-800" data-cursor="text">Control Panel</span>
             </div>
           </div>
-          <a href="https://modules.zumito.dev/user-panel" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors" data-cursor="block">
+          <a href="https://modules.zumito.dev/module/user-panel" class="inline-flex items-center font-semibold text-blue-600 transition-colors hover:text-blue-800" data-cursor="block">
             View Module
-            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
         </div>
 
         <!-- Landing Module -->
-        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-cursor="block">
-          <div class="absolute top-4 right-4">
-            <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">New</span>
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+          <div class="absolute right-4 top-4">
+            <span class="rounded-full bg-purple-600 px-3 py-1 text-xs font-semibold text-white">New</span>
           </div>
           <div class="mb-6">
-            <div class="w-16 h-16 bg-purple-200 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-200 transition-transform duration-300 group-hover:scale-110">
+              <svg class="h-8 w-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v0"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2" data-cursor="text">Landing Pages</h3>
-            <p class="text-gray-600 mb-4" data-cursor="text">Beautiful landing pages for your server including home page, command listings, and other informational pages.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Home Page</span>
-              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Commands</span>
-              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Info Pages</span>
+            <h3 class="mb-2 text-2xl font-bold text-gray-900" data-cursor="text">Landing Pages</h3>
+            <p class="mb-4 text-gray-600" data-cursor="text">Beautiful landing pages for your server including home page, command listings, and other informational pages.</p>
+            <div class="mb-4 flex flex-wrap gap-2">
+              <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800" data-cursor="text">Home Page</span>
+              <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800" data-cursor="text">Commands</span>
+              <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800" data-cursor="text">Info Pages</span>
             </div>
           </div>
-          <a href="https://modules.zumito.dev/landing" class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-800 transition-colors" data-cursor="block">
+          <a href="https://modules.zumito.dev/module/landing" class="inline-flex items-center font-semibold text-purple-600 transition-colors hover:text-purple-800" data-cursor="block" >
             View Module
-            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
         </div>
 
         <!-- Help Command Module -->
-        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-50 to-green-100 p-8 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-cursor="block">
+        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-50 to-green-100 p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
           <div class="mb-6">
-            <div class="w-16 h-16 bg-green-200 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-200 transition-transform duration-300 group-hover:scale-110">
+              <svg class="h-8 w-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2" data-cursor="text">Help Command</h3>
-            <p class="text-gray-600 mb-4" data-cursor="text">Interactive help system with categorized commands, search functionality, and beautiful embeds.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Interactive</span>
-              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Search</span>
-              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Embeds</span>
+            <h3 class="mb-2 text-2xl font-bold text-gray-900" data-cursor="text">Help Command</h3>
+            <p class="mb-4 text-gray-600" data-cursor="text">Interactive help system with categorized commands, search functionality, and beautiful embeds.</p>
+            <div class="mb-4 flex flex-wrap gap-2">
+              <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800" data-cursor="text">Interactive</span>
+              <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800" data-cursor="text">Search</span>
+              <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800" data-cursor="text">Embeds</span>
             </div>
           </div>
-          <a href="https://modules.zumito.dev/help-command" class="inline-flex items-center text-green-600 font-semibold hover:text-green-800 transition-colors" data-cursor="block">
+          <a href="https://modules.zumito.dev/module/help-command" class="inline-flex items-center font-semibold text-green-600 transition-colors hover:text-green-800" data-cursor="block">
             View Module
-            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
@@ -335,12 +337,12 @@
 
       <!-- Call to Action for Module Store -->
       <div class="mt-16 text-center">
-        <p class="text-lg text-gray-600 mb-6" data-cursor="text">
+        <p class="mb-6 text-lg text-gray-600" data-cursor="text">
           Discover more modules in our store
         </p>
-        <a href="https://modules.zumito.dev" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-rose-600 to-purple-600 text-white font-semibold rounded-full hover:from-rose-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl" data-cursor="block">
+        <a href="https://modules.zumito.dev" class="inline-flex transform items-center rounded-full bg-gradient-to-r from-rose-600 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-rose-700 hover:to-purple-700 hover:shadow-xl" data-cursor="block">
           Browse Module Store
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
         </a>
@@ -396,7 +398,7 @@
 
             <div class="mt-8 flex space-x-8">
                 <div>
-                    <svg data-cursor="block" xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg data-cursor="block" xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-pink-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                         </svg>
                 </div>
@@ -617,7 +619,7 @@
             Build your next project with zumito framework and start saving time.
           </p>
           <div class="flex flex-wrap justify-center gap-6">
-            <a href="https://docs.zumito.dev/docs/custom/quickstart" data-cursor="block" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+            <a href={getStartedUrl} data-cursor="block" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-rose-600 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
               <span class="relative text-base font-semibold text-white">Get Started</span>
             </a>
             <a href="https://docs.zumito.dev/docs/quick-start" data-cursor="block" class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-rose-600/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
