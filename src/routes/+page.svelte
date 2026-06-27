@@ -7,6 +7,7 @@
   import localizationHandlerIllustration from '$lib/assets/localization.jpg';
   import databaseIllustration from '$lib/assets/database.png';
   import apiIllustration from '$lib/assets/api.png';
+  import welcomePng from '$lib/assets/welcome.png';
 
   const faqs = [{
     question: "What is Zumito?",
@@ -350,7 +351,57 @@
     </div>
   </div>
 
-    <div class="min-h-sceen mx-auto max-w-7xl bg-white px-5">
+  <!-- Studio Beta Section -->
+  <div class="mx-auto max-w-7xl bg-white px-5 py-16">
+    <div class="flex flex-col items-center">
+      <h2 class="text-center text-2xl font-bold text-gray-800 md:text-4xl" data-cursor="text">
+        <span class="rounded-full bg-rose-100 px-3 py-1 text-sm font-semibold text-rose-600 align-middle mr-3">BETA</span>
+        Zumito <span class="text-rose-600">Studio</span>
+      </h2>
+      <p class="mt-4 max-w-2xl text-center text-lg text-gray-600" data-cursor="text">
+        The dedicated IDE for building Discord bots. Visual database explorer, config editor, module marketplace, and more — all in one place.
+      </p>
+
+      <div class="mt-8">
+        <img src={welcomePng} alt="Zumito Studio welcome screen" class="mx-auto w-full max-w-4xl" />
+      </div>
+    </div>
+
+    <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div class="overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <div class="flex items-center text-rose-600">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+        </div>
+        <h3 class="mt-3 text-lg font-semibold text-gray-800">Database Explorer</h3>
+        <p class="mt-2 text-sm text-gray-500">Browse collections, filter with visual query builder, and edit records inline.</p>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <div class="flex items-center text-rose-600">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+        </div>
+        <h3 class="mt-3 text-lg font-semibold text-gray-800">Visual Config Editor</h3>
+        <p class="mt-2 text-sm text-gray-500">Point-and-click configuration. Database drivers, modules, web server — no code needed.</p>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <div class="flex items-center text-rose-600">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+        </div>
+        <h3 class="mt-3 text-lg font-semibold text-gray-800">Module Marketplace</h3>
+        <p class="mt-2 text-sm text-gray-500">Browse and install community modules directly from the IDE. One click install.</p>
+      </div>
+    </div>
+
+    <div class="mt-8 text-center">
+      <a href="/studio" class="inline-flex transform items-center rounded-full bg-gradient-to-r from-rose-600 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl" data-cursor="block">
+        Explore Zumito Studio
+        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="min-h-sceen mx-auto max-w-7xl bg-white px-5">
         <div class="flex flex-col items-center">
             <h2 class="text-center text-4xl font-bold text-gray-800 md:text-5xl" data-cursor="text">
                 Not enough?
